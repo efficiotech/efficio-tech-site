@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efficio.Tech – Intelligent Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      padding: 4rem 0;
+    }
+    .hero img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .services, .about, .testimonial, .contact {
+      padding: 4rem 0;
+    }
+    .services section, .about section {
+      margin-bottom: 2rem;
+    }
+    .icon {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+    footer {
+      background: #f1f1f1;
+      padding: 2rem 0;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul><li><strong>Efficio.Tech</strong></li></ul>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>Streamline Everything with Intelligent Automation</h1>
+        <p>We design lean, AI-driven systems that eliminate busywork and scale your operations.</p>
+        <a href="#contact" role="button">Let’s Build Something</a>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1581091870622-2c9b223d3b93?auto=format&fit=crop&w=1200&q=80" alt="AI Automation Image" />
+      </div>
+    </div>
+
+    <section id="services" class="services">
+      <h2>What We Do</h2>
+      <section>
+        <h3><span class="icon">⚙️</span> Business Process Automation</h3>
+        <p>Identify and eliminate manual workflows. Replace them with scalable, AI-powered systems that free up your team.</p>
+      </section>
+      <section>
+        <h3><span class="icon">🧠</span> AI Consulting & Strategy</h3>
+        <p>From GPT-powered tools to advanced LLM workflows, we guide you on smart, realistic AI integration.</p>
+      </section>
+      <section>
+        <h3><span class="icon">💻</span> Custom Software & Dashboards</h3>
+        <p>Build the tools you actually need — clean frontends, intelligent backends, and real-time reporting that works.</p>
+      </section>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Why Efficio?</h2>
+      <p>We're a design-led automation team with deep experience in operations, AI, and SaaS systems. Our goal is simple: make your systems feel invisible.</p>
+    </section>
+
+    <section class="testimonial">
+      <h2>Client Feedback</h2>
+      <blockquote>
+        "Efficio.Tech automated our 8-step onboarding flow and saved our ops team 30+ hours per week. Highly recommended."
+        <footer>— VP Ops, FinTech SaaS</footer>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s Talk Automation</h2>
+      <form class="grid">
+        <input type="text" name="firstname" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="you@company.com" required>
+        <button type="submit" onclick="event.preventDefault()">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="https://linkedin.com" target="_blank">LinkedIn</a></small>
+  </footer>
+</body>
+</html>
